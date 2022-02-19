@@ -1,0 +1,98 @@
+.date{
+    width: 100%;
+}
+.moon{
+position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(12, 141, 91);
+    cursor: pointer;
+  
+}
+.move{
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    padding: 2px;
+    background-color: rgb(90, 24, 221) ;
+    color: aliceblue;
+    left: 0;
+    bottom: -42px;
+opacity: 0;
+    transition: all .8s;
+    z-index: 99;
+}
+.move::before{
+    content: "";
+    border-width: 12px;
+    border-color: transparent transparent  rgb(90, 24, 221)  transparent ;
+    border-style: solid;
+    position: relative;
+    top: -36px;
+    left: 5px;
+}
+.moon:hover .move{
+    opacity: 1;
+}
+.date-content div {
+
+    margin: 5px;
+    border: 1px solid gray;
+ 
+}
+
+.date-content div h2{
+    text-align: center;
+    padding: 3px;
+    color: white; 
+}
+
+.date-content div p{
+    text-align: center;
+    padding: 3px;
+    font-size: 23px;
+}
+.hour{
+background-color: rgb(16, 131, 102);
+color: white;
+}
+.min{
+    background-color: rgba(17, 71, 219, 0.856);
+    color: white;
+}
+
+.second{
+    background-color: rgb(9, 128, 45);
+    color: white;
+}
+
+.m-s{
+    background-color: rgb(102, 22, 98);
+    color: white;
+}
+
+.hour h2{
+    background-color: rgb(16, 131, 102);
+   
+    }
+    .min h2{
+        background-color: rgba(17, 71, 219, 0.856);
+   
+    }
+    
+    .second h2{
+        background-color: rgb(9, 128, 45);
+    
+    }
+    
+    .m-s h2{
+        background-color: rgb(102, 22, 98);
+
+    }
+.age label{
+    cursor: pointer;
+}
